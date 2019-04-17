@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+Name: Arianna Buller
+Date Created: 1/16/19
+Most recent revision: 4/16/19
+-->
+<html lang="en">
+<head>
+	<title>Contact Us</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>	
+	<link href="styles/restaurantstyles.css" rel="stylesheet" type="text/css"/>
+	<style type="text/css">
+		#form {
+			font-weight: bold;
+		}
+	</style>
+	<script type="text/JavaScript" src="restaurantjavascriptstyles.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1 style="font-family:cursive;"><span style="color: yellow">Happy Juice Cafe</sp></h1>
+	</header>
+<!-- <nav>
+	<hr />
+	<center>
+		<p><a href="Home.html">Home</a></p>
+		<p><a href="Menu.html">Menu</a></p>
+		<p><a href="Contact.html">Contact Us</a></p>
+		<div class="clear-float"></div>
+	</center>
+	<hr />
+</nav> -->
+<ul class="nav nav-pills">
+		<li class="active"><a href="Home.html"><i class='fas fa-home' style='font-size:24px'></i></a></li>
+		<li><a href="Menu.html">Menu</a></li>
+		<li><a href="Contact.html">Contact Us</a></li>
+		</ul>
+	<center><div class="jumbotron">
+			<h1>Big News!</h1>
+			<p>Our cafe is opening a new location! Come visit us this August in Plymouth, Minnesota.</p> 
+		  </div></center>
+	<center>
+
+<form name="form" onSubmit="return validateItems();" class="form-inline" >
+
+		<div class="form-group">
+			<label for="name">Name:*</label>
+			<input type="text" class="form-control" id="name" name="name" required></div></br>
+</br>
+		<div class="form-group">
+		<label for="email">Email:*</label>
+			<input type="email" class="form-control" id="email" name="email" required></div></br>
+</br>
+		<div class="form-group">
+		<label for="phone">Phone Number </br> (Format: 999-999-9999)</label>
+			<input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="form-control" id="phone" name="phone"></div></br>
+</br>
+		<label for="inquiry">Reason for Inquiry:</label>
+			<select id="inquiry" name="inquiry">
+		<option value="default" selected>--Select One--</option>
+		<option value="Catering">Catering</option>
+		<option value="Party">Private Party</option>
+		<option value="Feedback">Feedback</option>
+		<option value="other">Other</option>
+			</select><br />
+<br />
+	<label for="info">Additional Information:</label>
+		<textarea id="info" name="info">
+		</textarea><br />
+</br>
+	<legend>Have you been to our cafe before?</legend>
+		<input type="radio" id="chioice1" name="questionnaire" value="yes">
+		<label for="choice1">Yes</label>
+		<input type="radio" id="choice2" name="questionnaire" value="no">
+		<label for="choice2">No</label></br>
+<br />
+	<legend>Best days to contact you (check all that apply):</legend>
+		<input type="checkbox" id="M" name="day" value="Monday">
+			<label for="M">Monday</label>
+		<input type="checkbox" id="T" name="day" value="Tuesday">
+			<label for="T">Tuesday</label>
+		<input type="checkbox" id="W" name="day" value="Wednesday">
+			<label for="W">Wednesday</label>
+		<input type="checkbox" id="Th" name="day" value="Thursday">
+			<label for="Th">Thursday</label>
+		<input type="checkbox" id="F" name="day" value="Friday">
+			<label for="F">Friday</label><br />
+<br />
+	<input type="submit" name="submit" value="Send Request"><br />
+</form>
+</center>
+
+<footer>
+	<center>
+		<p>2727 Sunshine Blvd, Chanhassen, Minnesota, 55317</br>
+				952-222-7777</br>
+				&copy; 2018 Arianna Bulller. All rights reserved.</p>
+	</center>
+</footer>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+<noscript class="noscript">
+	<div id="enablejs">
+	This site is best viewed with Javascript. Please enable javascript in your browser.
+	</div>
+</noscript>
+
+</body>
+</html>
